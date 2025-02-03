@@ -7,7 +7,7 @@
    - Move to the parent directory from the current location.  
    
    **Answer:**  
-   ```bash
+   cd ..
 # Student's Answer Here
 ```
 
@@ -15,7 +15,7 @@
    - List all hidden files and directories in the current directory.  
    
    **Answer:**  
-   ```bash
+   ls -a
 # Student's Answer Here
 ```
 
@@ -23,7 +23,8 @@
    - Delete a directory named `oldfolder` from the current location.  
    
    **Answer:**  
-   ```bash
+   mkdir oldfolder
+   rmdir oldfolder
 # Student's Answer Here
 ```
 
@@ -31,7 +32,8 @@
    - Create a directory structure `/home/user/project/src/` using one command.  
    
    **Answer:**  
-   ```bash
+   mkdir -p /home/user/project/src/
+
 # Student's Answer Here
 ```
 
@@ -39,7 +41,8 @@
    - Display the disk space usage of `largefile.tar`.  
    
    **Answer:**  
-   ```bash
+   touch largefile.tar
+    du -h largefile.tar
 # Student's Answer Here
 ```
 
@@ -47,7 +50,7 @@
    - Display the available space on all mounted filesystems in a human-readable format.  
    
    **Answer:**  
-   ```bash
+   df -h
 # Student's Answer Here
 ```
 
@@ -55,7 +58,9 @@
    - Open `readme.txt` with Vim editor.  
    
    **Answer:**  
-   ```bash
+   vim readme.txt
+   i for insert esc and :wq save and exit
+
 # Student's Answer Here
 ```
 
@@ -63,7 +68,7 @@
    - Move `file1.txt`, `file2.txt`, and `file3.txt` from `/home/user/documents/` to `/home/user/backup/`.  
    
    **Answer:**  
-   ```bash
+   mkdir -p /home/user/backup/
 # Student's Answer Here
 ```
 
@@ -71,7 +76,7 @@
    - Copy all files and subdirectories from `/home/user/docs/` to `/home/user/docs_backup/`.  
    
    **Answer:**  
-   ```bash
+   cp -r /home/user/docs /home/user/docs_backup/`.
 # Student's Answer Here
 ```
 
@@ -79,7 +84,7 @@
     - Create a file named `largefile.txt` with a size of 1GB.  
    
     **Answer:**  
-    ```bash
+    dd if=/dev/zero of=largefile.txt bs=1M count=1024
 # Student's Answer Here
 ```
 
@@ -87,7 +92,9 @@
     - Show the last 10 lines of `server.log`.  
    
     **Answer:**  
-    ```bash
+  touch server.log
+  echo "log file created" server.log    
+  tail -n 10 server.log
 # Student's Answer Here
 ```
 
@@ -95,7 +102,8 @@
     - Find a file named `config.yaml` within `/etc/`.  
    
     **Answer:**  
-    ```bash
+   sudo touch config.yaml
+   sudo find /etc/ -name config.yaml 
 # Student's Answer Here
 ```
 
@@ -103,7 +111,7 @@
     - Search for the word "failed" in all `.log` files within `/var/log/`.  
    
     **Answer:**  
-    ```bash
+    sudo grep -i "failed" /var/log/*.log
 # Student's Answer Here
 ```
 
@@ -111,7 +119,7 @@
     - Display the absolute path of the current working directory.  
    
     **Answer:**  
-    ```bash
+    pwd
 # Student's Answer Here
 ```
 
@@ -119,7 +127,7 @@
     - Create an empty file named `emptyfile.txt`.  
    
     **Answer:**  
-    ```bash
+   touch emptyfil.txt
 # Student's Answer Here
 ```
 
@@ -127,7 +135,8 @@
     - Count the number of lines in `script.sh`.  
    
     **Answer:**  
-    ```bash
+    touch script.sh
+    wc l script.sh
 # Student's Answer Here
 ```
 
@@ -135,7 +144,7 @@
     - Initialize a new Git repository in the current directory.  
    
     **Answer:**  
-    ```bash
+    git init
 # Student's Answer Here
 ```
 
@@ -143,7 +152,7 @@
     - Clone a Git repository using SSH from GitHub.  
    
     **Answer:**  
-    ```bash
+    git clone ssh url
 # Student's Answer Here
 ```
 
@@ -151,7 +160,7 @@
     - Display the commit history of the repository.  
    
     **Answer:**  
-    ```bash
+    git log
 # Student's Answer Here
 ```
 
@@ -159,7 +168,7 @@
     - Check the current status of your Git repository.  
    
     **Answer:**  
-    ```bash
+    git status
 # Student's Answer Here
 ```
 
@@ -167,7 +176,7 @@
     - Stage the file `update.sh` for commit.  
    
     **Answer:**  
-    ```bash
+    git add .
 # Student's Answer Here
 ```
 
@@ -175,7 +184,7 @@
     - Commit the staged changes with the message "Initial commit".  
    
     **Answer:**  
-    ```bash
+    git commit -m "file name" 
 # Student's Answer Here
 ```
 
@@ -183,7 +192,7 @@
     - Push committed changes to the `main` branch of a remote repository.  
    
     **Answer:**  
-    ```bash
+   git push
 # Student's Answer Here
 ```
 
@@ -191,7 +200,7 @@
     - List all the currently running processes.  
    
     **Answer:**  
-    ```bash
+    ls -la
 # Student's Answer Here
 ```
 
@@ -199,7 +208,7 @@
     - Find all processes with the name `nginx`.  
    
     **Answer:**  
-    ```bash
+    ps aux | grep nginx
 # Student's Answer Here
 ```
 
@@ -207,7 +216,10 @@
     - Terminate the process with PID `12345`.  
    
     **Answer:**  
-    ```bash
+    ps -p 12345
+    pgrep
+    ps aux
+    kill 12345
 # Student's Answer Here
 ```
 
@@ -215,7 +227,7 @@
     - Display the system uptime (how long the system has been running).  
    
     **Answer:**  
-    ```bash
+    uptime
 # Student's Answer Here
 ```
 
@@ -223,7 +235,7 @@
     - Use a command to monitor system performance in real time (CPU usage, memory, etc.).  
    
     **Answer:**  
-    ```bash
+    top
 # Student's Answer Here
 ```
 
@@ -231,7 +243,7 @@
     - Display the system load average for the past 1, 5, and 15 minutes.  
    
     **Answer:**  
-    ```bash
+    uptime
 # Student's Answer Here
 ```
 
@@ -239,7 +251,7 @@
     - Display detailed information about the system (OS, kernel version, etc.).  
    
     **Answer:**  
-    ```bash
+    uname -a
 # Student's Answer Here
 ```
 
@@ -247,7 +259,7 @@
     - Display the available physical and swap memory on the system.  
    
     **Answer:**  
-    ```bash
+    free -h
 # Student's Answer Here
 ```
 
@@ -255,7 +267,7 @@
     - Display the network interface configuration for the system.  
    
     **Answer:**  
-    ```bash
+    ip a
 # Student's Answer Here
 ```
 
@@ -263,7 +275,7 @@
     - Display all the listening network ports on the system.  
    
     **Answer:**  
-    ```bash
+    ss -tuln
 # Student's Answer Here
 ```
 
@@ -271,7 +283,9 @@
     - Display all active user sessions on the system.  
    
     **Answer:**  
-    ```bash
+    who
+    w
+    whoami
 # Student's Answer Here
 ```
 
@@ -279,7 +293,7 @@
     - Display the disk usage of `/home/` in a human-readable format.  
    
     **Answer:**  
-    ```bash
+    du -sh /home/
 # Student's Answer Here
 ```
 
@@ -287,7 +301,7 @@
     - Display the last 50 lines of the system log file `/var/log/syslog`.  
    
     **Answer:**  
-    ```bash
+    sudo tail -n 50 /var/log/syslog`.
 # Student's Answer Here
 ```
 
@@ -295,7 +309,9 @@
     - Change the permissions of `testfile.txt` to be read and write for the owner only.  
    
     **Answer:**  
-    ```bash
+    touch testfile.txt
+    chmod 600 testfile.txt
+    ls -l testfile.txt
 # Student's Answer Here
 ```
 
@@ -303,7 +319,10 @@
     - Change the ownership of `backup.sql` to user `admin`.  
    
     **Answer:**  
-    ```bash
+    sudo useradd -g admin admin
+    sudo passwd admin
+    sudo chown admin backup.sql
+    sudo chown charan backup.sql
 # Student's Answer Here
 ```
 
@@ -311,7 +330,8 @@
     - Create a symbolic link to the file `data.txt` named `data_link.txt`.  
    
     **Answer:**  
-    ```bash
+    ln -s data.txt data_link.txt
+    to verifi ls -l data_link.txt
 # Student's Answer Here
 ```
 
@@ -319,7 +339,7 @@
     - Display the current kernel version of the system.  
    
     **Answer:**  
-    ```bash
+    uname -r
 # Student's Answer Here
 ```
 
@@ -327,7 +347,9 @@
     - Monitor disk input/output statistics in real-time.  
    
     **Answer:**  
-    ```bash
+    sudo apt update
+    sudo apt istall systat
+    iostat x 1
 # Student's Answer Here
 ```
 
@@ -335,7 +357,9 @@
     - Change the password for the user `johndoe`.  
    
     **Answer:**  
-    ```bash
+    sudo useradd johndoe
+    sudo passwd johndoe
+
 # Student's Answer Here
 ```
 
@@ -343,7 +367,7 @@
     - Create a cron job that runs a backup script every day at midnight.  
    
     **Answer:**  
-    ```bash
+    crontab -e
 # Student's Answer Here
 ```
 
@@ -351,7 +375,7 @@
     - List all open file descriptors on the system.  
    
     **Answer:**  
-    ```bash
+    sudo lsof
 # Student's Answer Here
 ```
 
@@ -359,7 +383,7 @@
     - Create a compressed `.tar.gz` archive of the directory `/home/user/documents/`.  
    
     **Answer:**  
-    ```bash
+    tar -czvf documents.tar.gz /home/user/documents/
 # Student's Answer Here
 ```
 
