@@ -68,7 +68,8 @@
    - Move `file1.txt`, `file2.txt`, and `file3.txt` from `/home/user/documents/` to `/home/user/backup/`.  
    
    **Answer:**  
-   mkdir -p /home/user/backup/
+   mv /home/user/documents/file1.txt /home/user/documents/file2.txt /home/user/documents/file3.txt /home/user/backup/
+
 # Student's Answer Here
 ```
 
